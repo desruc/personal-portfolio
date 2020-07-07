@@ -1,10 +1,19 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
-  plugins: [],
-}
+  siteMetadata: {
+    siteTitle: 'JMSCMRN',
+    siteTitleAlt: '',
+    siteDescription: 'My personal portfolio',
+    siteLanguage: 'en',
+    author: 'James Cameron',
+    siteUrl: 'https://wwww.jmscmrn.com',
+    siteImage: '/siteImage.jpg',
+    gitHub: 'https://github.com/desruc',
+    linkedIn: 'https://www.linkedin.com'
+  },
+  plugins: [
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-theme-ui'
+  ]
+};
