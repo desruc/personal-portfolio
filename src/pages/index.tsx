@@ -1,5 +1,12 @@
 import React from 'react';
 
-export default function Home() {
-  return <div>Hello world!</div>;
-}
+import Layout from '../components/Layout';
+import AboutMe from '../components/AboutMe';
+
+const Home = () => (
+  <Layout>
+    <AboutMe />
+  </Layout>
+);
+
+export default Home;
