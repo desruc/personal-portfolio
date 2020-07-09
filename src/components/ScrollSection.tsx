@@ -2,6 +2,7 @@
 import { jsx, Box } from 'theme-ui';
 
 import ProjectList from './ProjectList';
+import Skills from './Skills';
 
 const ScrollSection = () => (
   <Box
@@ -17,6 +18,7 @@ const ScrollSection = () => (
     }}
   >
     <ProjectList />
+    <Skills />
   </Box>
 );
 
