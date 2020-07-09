@@ -9,7 +9,19 @@ type ProjectCardProps = {
 };
 
 const ProjectCard = ({ link, title, description, stack }: ProjectCardProps) => (
-  <Box sx={{ bg: '#202022', width: '100%', userSelect: 'none' }}>
+  <Box
+    className="project-card"
+    sx={{
+      bg: '#202022',
+      width: '100%',
+      mt: 2,
+      mb: 2,
+      userSelect: 'none',
+      transition: 'all .2s ease-in-out',
+      transitionProperty: 'opacity, transform',
+      '&:hover': { opacity: '1 !important', transform: 'scale(1.1)' }
+    }}
+  >
     <a
       href={link}
       target="_blank"
