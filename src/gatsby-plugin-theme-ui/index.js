@@ -20,6 +20,22 @@ const theme = {
       color: 'heading'
     }
   },
+  heading: {
+    skills: {
+      letterSpacing: 2,
+      fontWeight: 400,
+      textTransform: 'uppercase',
+      mb: 2
+    }
+  },
+  flex: {
+    skills: {
+      flexWrap: 'wrap',
+      width: 'fit-content',
+      mb: 3,
+      '&:hover': { '.tech-icon': { opacity: 0.5 } }
+    }
+  },
   styles: {
     root: {
       fontFamily: 'body'

@@ -18,8 +18,8 @@ const TechIcon = ({ icon }: TechIconProps) => {
       title={title}
       sx={{
         backgroundColor: '#202022',
-        height: '60px',
-        width: '60px',
+        height: '65px',
+        width: '65px',
         padding: 10,
         margin: '5px',
         transition: 'all .2s ease-in-out',

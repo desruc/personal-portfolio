@@ -1,46 +1,67 @@
 /** @jsx jsx */
-import { jsx, Box, Flex } from 'theme-ui';
+import { jsx, Box, Heading, Flex } from 'theme-ui';
 
 import TechIcon from './icons/TechIcon';
 
-const Skills = () => (
-  <Box
-    id="skills"
-    sx={{ pt: 5, '&:hover': { '.tech-icon': { opacity: 0.5 } } }}
-  >
-    <Flex sx={{ flexWrap: 'wrap' }}>
-      <TechIcon icon="javascript" />
-      <TechIcon icon="react" />
-      <TechIcon icon="gatsby" />
-      <TechIcon icon="typescript" />
-      <TechIcon icon="nodejs" />
-      <TechIcon icon="mongodb" />
-      <TechIcon icon="materialui" />
-      <TechIcon icon="jest" />
-      <TechIcon icon="redux" />
-      <TechIcon icon="circleci" />
-      <TechIcon icon="html" />
-      <TechIcon icon="css" />
-      <TechIcon icon="jquery" />
-      <TechIcon icon="php" />
-      <TechIcon icon="googlecloud" />
-      <TechIcon icon="git" />
-      <TechIcon icon="vuejs" />
-      <TechIcon icon="docker" />
-      <TechIcon icon="graphql" />
-      <TechIcon icon="styledcomponents" />
-      <TechIcon icon="mysql" />
-      <TechIcon icon="webpack" />
-      <TechIcon icon="microsoftazure" />
-      <TechIcon icon="wordpress" />
-      <TechIcon icon="swagger" />
-      <TechIcon icon="mocha" />
-      <TechIcon icon="redis" />
-      <TechIcon icon="laravel" />
-      <TechIcon icon="reactrouter" />
-      <TechIcon icon="sass" />
-    </Flex>
-  </Box>
-);
+const Skills = () => {
+  const exceptional = [
+    'html',
+    'css',
+    'git',
+    'javascript',
+    'react',
+    'redux',
+    'reactrouter',
+    'materialui',
+    'styledcomponents',
+    'gatsby',
+    'sass'
+  ];
+
+  const great = [
+    'typescript',
+    'docker',
+    'nodejs',
+    'mongodb',
+    'graphql',
+    'jest'
+  ];
+
+  const good = ['vuejs', 'php', 'jquery', 'mysql', 'laravel', 'wordpress'];
+
+  return (
+    <Box id="skills" sx={{ pt: 5 }}>
+      <Heading as="h5" sx={{ variant: 'heading.skills' }}>
+        Exceptional
+      </Heading>
+      <Flex
+        className="exceptional-skills"
+        sx={{
+          variant: 'flex.skills'
+        }}
+      >
+        {exceptional.map(icon => (
+          <TechIcon icon={icon} />
+        ))}
+      </Flex>
+      <Heading as="h5" sx={{ variant: 'heading.skills' }}>
+        Great
+      </Heading>
+      <Flex sx={{ variant: 'flex.skills' }}>
+        {great.map(icon => (
+          <TechIcon icon={icon} />
+        ))}
+      </Flex>
+      <Heading as="h5" sx={{ variant: 'heading.skills' }}>
+        Good
+      </Heading>
+      <Flex sx={{ variant: 'flex.skills' }}>
+        {good.map(icon => (
+          <TechIcon icon={icon} />
+        ))}
+      </Flex>
+    </Box>
+  );
+};
 
 export default Skills;
