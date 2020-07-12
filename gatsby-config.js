@@ -5,6 +5,7 @@ module.exports = {
     siteDescription: 'My personal portfolio',
     siteLanguage: 'en',
     author: 'James Cameron',
+    contact: 'hello@jmscmrn.com',
     siteUrl: 'https://wwww.jmscmrn.com',
     siteImage: '/siteImage.jpg',
     gitHub: 'https://github.com/desruc',

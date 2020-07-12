@@ -11,8 +11,8 @@ type NavListItemProps = {
 const NavListItem = ({ number, title, active, onClick }: NavListItemProps) => (
   <li
     sx={{
-      mt: 2,
-      mb: 2,
+      mt: 4,
+      mb: 3,
       fontSize: 10
     }}
   >
@@ -39,7 +39,7 @@ const NavListItem = ({ number, title, active, onClick }: NavListItemProps) => (
       <span
         sx={{
           color: active ? '#ffffff' : 'text',
-          letterSpacing: 1,
+          letterSpacing: 3,
           transitionProperty: 'color',
           transition: 'all 0.2s ease-in-out'
         }}
@@ -61,7 +61,7 @@ const NavListItem = ({ number, title, active, onClick }: NavListItemProps) => (
       <span
         sx={{
           textTransform: 'uppercase',
-          letterSpacing: 1,
+          letterSpacing: 3,
           transitionProperty: 'color',
           transition: 'all 0.2s ease-in-out'
         }}

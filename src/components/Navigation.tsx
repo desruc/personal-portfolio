@@ -22,6 +22,7 @@ const Navigation = () => {
 
       let projectsOffset = 0;
       let skillsOffset = 0;
+      let contactOffset = 0;
 
       const projectsEl = document.getElementById('projects');
       if (projectsEl) projectsOffset = posY + projectsEl.offsetTop;
@@ -29,9 +30,14 @@ const Navigation = () => {
       const skillsEl = document.getElementById('skills');
       if (skillsEl) skillsOffset = posY + skillsEl.offsetTop;
 
+      const contactEl = document.getElementById('contact');
+      if (contactEl) contactOffset = posY + contactEl.offsetTop;
+
       let current = 'projects';
-      if (projectsOffset < 100) current = 'projects';
-      if (skillsOffset < 100) current = 'skills';
+
+      if (projectsOffset < 150) current = 'projects';
+      if (skillsOffset < 150) current = 'skills';
+      if (contactOffset < 150) current = 'contact';
 
       if (current !== active) setActive(current);
     },
@@ -59,6 +65,12 @@ const Navigation = () => {
           number="02"
           title="skills"
           active={active === 'skills'}
+          onClick={scrollTo}
+        />
+        <NavListItem
+          number="03"
+          title="contact"
+          active={active === 'contact'}
           onClick={scrollTo}
         />
       </ul>
