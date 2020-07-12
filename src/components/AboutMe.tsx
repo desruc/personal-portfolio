@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, Box, Text, Heading } from 'theme-ui';
 
+import Navigation from './Navigation';
 import AboutFooter from './AboutFooter';
 
 const AboutMe = () => (
@@ -25,6 +26,7 @@ const AboutMe = () => (
           learn new things.
         </Text>
       </div>
+      <Navigation />
     </Box>
     <AboutFooter />
   </Box>

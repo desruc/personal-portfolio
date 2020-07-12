@@ -4,7 +4,10 @@ import { jsx, Box, Flex } from 'theme-ui';
 import TechIcon from './icons/TechIcon';
 
 const Skills = () => (
-  <Box sx={{ mt: 5, '&:hover': { '.tech-icon': { opacity: 0.5 } } }}>
+  <Box
+    id="skills"
+    sx={{ pt: 5, '&:hover': { '.tech-icon': { opacity: 0.5 } } }}
+  >
     <Flex sx={{ flexWrap: 'wrap' }}>
       <TechIcon icon="javascript" />
       <TechIcon icon="react" />

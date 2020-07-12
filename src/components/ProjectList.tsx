@@ -4,7 +4,10 @@ import { jsx, Box } from 'theme-ui';
 import ProjectCard from './ProjectCard';
 
 const ProjectList = () => (
-  <Box sx={{ '&:hover': { '.project-card': { opacity: 0.5 } } }}>
+  <Box
+    id="projects"
+    sx={{ paddingTop: 88, '&:hover': { '.project-card': { opacity: 0.5 } } }}
+  >
     <ProjectCard
       link="https://github.com/desruc/discord-bot"
       title="Discord Bot"

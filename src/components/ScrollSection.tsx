@@ -6,10 +6,11 @@ import Skills from './Skills';
 
 const ScrollSection = () => (
   <Box
+    id="scroll-section"
     sx={{
       position: 'absolute',
       height: '300vh',
-      padding: '88px 88px 88px 0px',
+      padding: '0px 88px 88px 0px',
       maxWidth: 763,
       width: '100%',
       display: 'flex',
