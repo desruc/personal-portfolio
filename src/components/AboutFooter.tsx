@@ -1,5 +1,7 @@
 /** @jsx jsx */
 import { jsx, Flex } from 'theme-ui';
+import { useStaticQuery, graphql } from 'gatsby';
+import GatsbyImage from 'gatsby-image';
 
 import ExternalLinkIcon from './icons/ExternalLinkIcon';
 import LinkedInIcon from './icons/LinkedInIcon';
@@ -9,10 +11,31 @@ import { useSiteMetadata } from '../hooks/useSiteMetadata';
 const AboutFooter = () => {
   const { linkedIn, gitHub } = useSiteMetadata();
 
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "me.jpg" }) {
+        childImageSharp {
+          fixed(width: 100, quality: 100) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `);
+
   return (
-    <Flex sx={{ alignItems: 'center', mt: 4 }}>
-      <img
-        src="https://via.placeholder.com/150"
+    <Flex
+      sx={{
+        alignItems: 'center',
+        mt: 4,
+        '.gatsby-image-wrapper': {
+          width: '50px !important',
+          height: '50px !important'
+        }
+      }}
+    >
+      <GatsbyImage
+        fixed={data.file.childImageSharp.fixed}
         alt="James Cameron"
         sx={{ width: 50, height: 50, borderRadius: '50%', marginRight: 4 }}
       />

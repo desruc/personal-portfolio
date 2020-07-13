@@ -20,7 +20,7 @@ const Contact = () => {
       >
         Get in touch
       </Heading>
-      <Text as="p" sx={{ mb: 4 }}>
+      <Text as="p" sx={{ mb: 4, fontSize: 14 }}>
         Although I'm not currently looking for any new opportunities, my inbox
         is always open. Whether you have a question or just want to say hi, I'll
         try my best to get back to you!
@@ -33,19 +33,7 @@ const Contact = () => {
           pb: 2,
           pl: 3,
           pr: 3,
-          borderRadius: 3,
-          color: 'text',
-          textDecoration: 'none',
-          background: 'transparent',
-          cursor: 'pointer',
-          borderColor: 'text',
-          border: '1px solid',
-          lineHeight: 2,
-          textTransform: 'uppercase',
-          fontSize: 14,
-          letterSpacing: 3,
-          fontWeight: 600,
-          display: 'inline-block'
+          variant: 'links.button'
         }}
       >
         Say Hello

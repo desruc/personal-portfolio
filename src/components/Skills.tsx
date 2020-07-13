@@ -41,7 +41,7 @@ const Skills = () => {
         }}
       >
         {exceptional.map(icon => (
-          <TechIcon icon={icon} />
+          <TechIcon key={icon} icon={icon} />
         ))}
       </Flex>
       <Heading as="h5" sx={{ variant: 'heading.skills' }}>
@@ -49,7 +49,7 @@ const Skills = () => {
       </Heading>
       <Flex sx={{ variant: 'flex.skills' }}>
         {great.map(icon => (
-          <TechIcon icon={icon} />
+          <TechIcon key={icon} icon={icon} />
         ))}
       </Flex>
       <Heading as="h5" sx={{ variant: 'heading.skills' }}>
@@ -57,7 +57,7 @@ const Skills = () => {
       </Heading>
       <Flex sx={{ variant: 'flex.skills' }}>
         {good.map(icon => (
-          <TechIcon icon={icon} />
+          <TechIcon key={icon} icon={icon} />
         ))}
       </Flex>
     </Box>
