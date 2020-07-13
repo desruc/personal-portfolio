@@ -7,15 +7,31 @@ import AboutFooter from './AboutFooter';
 const AboutMe = () => (
   <Box
     sx={{
-      position: 'fixed',
-      height: '100vh',
-      padding: '88px 0px 88px 88px',
-      maxWidth: 496,
+      position: 'static',
+      padding: 32,
       display: 'flex',
-      flexDirection: 'column'
+      flexDirection: 'column',
+      '@media (min-width: 992px)': {
+        height: '100vh',
+        position: 'fixed',
+        padding: '32px 0px 32px 32px',
+        maxWidth: 408
+      },
+      '@media (min-width: 1280px)': {
+        height: '100vh',
+        position: 'fixed',
+        padding: '88px 0px 88px 88px',
+        maxWidth: 496
+      }
     }}
   >
-    <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        '@media (min-width: 992px)': { flex: 1 }
+      }}
+    >
       <div>
         <Heading as="h1" sx={{ fontSize: 64 }}>
           Hi, I'm James Cameron

@@ -10,11 +10,11 @@ const AboutFooter = () => {
   const { linkedIn, gitHub } = useSiteMetadata();
 
   return (
-    <Flex sx={{ alignItems: 'center' }}>
+    <Flex sx={{ alignItems: 'center', mt: 4 }}>
       <img
         src="https://via.placeholder.com/150"
         alt="James Cameron"
-        sx={{ width: 50, height: 50, borderRadius: '50%', marginRight: 30 }}
+        sx={{ width: 50, height: 50, borderRadius: '50%', marginRight: 4 }}
       />
       <ul
         sx={{
@@ -22,7 +22,8 @@ const AboutFooter = () => {
           margin: 0,
           padding: 0,
           listStyle: 'none',
-          color: 'white'
+          color: 'white',
+          marginLeft: -16
         }}
       >
         <li sx={{ margin: '0px 16px' }}>
@@ -30,7 +31,9 @@ const AboutFooter = () => {
             href={linkedIn}
             target="_blank"
             rel="noreferrer"
-            sx={{ textDecoration: 'none', color: 'inherit' }}
+            sx={{
+              variant: 'links.social'
+            }}
           >
             <LinkedInIcon height={16} width={16} />
             <span sx={{ marginLeft: 2 }}>LinkedIn</span>
@@ -44,7 +47,9 @@ const AboutFooter = () => {
             href={gitHub}
             target="_blank"
             rel="noreferrer"
-            sx={{ textDecoration: 'none', color: 'inherit' }}
+            sx={{
+              variant: 'links.social'
+            }}
           >
             <GitHubIcon height={16} width={16} />
             <span sx={{ marginLeft: 2 }}>GitHub</span>

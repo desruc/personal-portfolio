@@ -6,7 +6,10 @@ const Contact = () => {
   const { contact } = useSiteMetadata();
 
   return (
-    <Box id="contact" sx={{ pt: 5 }}>
+    <Box
+      id="contact"
+      sx={{ pt: 40, pb: 56, '@media (min-width: 992px)': { pb: 0, pt: 88 } }}
+    >
       <Heading
         sx={{
           mb: 3,

@@ -32,8 +32,17 @@ const theme = {
     skills: {
       flexWrap: 'wrap',
       width: 'fit-content',
-      mb: 3,
-      '&:hover': { '.tech-icon': { opacity: 0.5 } }
+      mb: 3
+      // '&:hover': { '.tech-icon': { opacity: 0.5 } }
+    }
+  },
+  links: {
+    social: {
+      textDecoration: 'none',
+      color: 'inherit',
+      fontSize: 14,
+      display: 'flex',
+      alignItems: 'center'
     }
   },
   styles: {

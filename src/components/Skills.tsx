@@ -30,7 +30,7 @@ const Skills = () => {
   const good = ['vuejs', 'php', 'jquery', 'mysql', 'laravel', 'wordpress'];
 
   return (
-    <Box id="skills" sx={{ pt: 5 }}>
+    <Box id="skills" sx={{ pt: 40, '@media (min-width: 992px)': { pt: 88 } }}>
       <Heading as="h5" sx={{ variant: 'heading.skills' }}>
         Exceptional
       </Heading>

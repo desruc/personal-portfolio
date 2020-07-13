@@ -9,14 +9,23 @@ const ScrollSection = () => (
   <Box
     id="scroll-section"
     sx={{
-      position: 'absolute',
+      position: 'static',
+      padding: 32,
       minHeight: 0,
-      padding: '0px 88px 88px 0px',
-      maxWidth: 763,
       width: '100%',
       display: 'flex',
       flexDirection: 'column',
-      right: 0
+      right: 0,
+      '@media (min-width: 992px)': {
+        position: 'absolute',
+        padding: '0px 32px 32px 0px',
+        maxWidth: 536
+      },
+      '@media (min-width: 1280px)': {
+        position: 'absolute',
+        padding: '0px 88px 88px 0px',
+        maxWidth: 763
+      }
     }}
   >
     <ProjectList />

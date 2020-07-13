@@ -45,7 +45,13 @@ const Navigation = () => {
   );
 
   return (
-    <nav sx={{ mt: 4 }}>
+    <nav
+      sx={{
+        mt: 4,
+        display: 'none',
+        '@media (min-width: 992px)': { display: 'block' }
+      }}
+    >
       <ul
         sx={{
           listStyle: 'none',

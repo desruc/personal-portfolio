@@ -36,7 +36,7 @@ const ProjectCard = ({ link, title, description, stack }: ProjectCardProps) => (
       <Heading as="h3" sx={{ fontSize: 4, fontWeight: 500 }}>
         {title}
       </Heading>
-      <Text as="p" sx={{ mt: 2 }}>
+      <Text as="p" sx={{ mt: 2, color: 'text', fontSize: 14 }}>
         {description}
       </Text>
       {stack && (
