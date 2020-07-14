@@ -7,9 +7,9 @@ const theme = {
     primary: '#eca400'
   },
   fonts: {
-    body: 'Arial',
-    heading: 'Rubik',
-    monospace: 'Rubik'
+    body: 'Rubik, -apple-sytem, Roboto, Helvetica Neue, sans-serif',
+    heading: 'Rubik, -apple-sytem, Roboto, Helvetica Neue, sans-serif',
+    monospace: 'Rubik, -apple-sytem, Roboto, Helvetica Neue, sans-serif'
   },
   layout: {
     container: {
