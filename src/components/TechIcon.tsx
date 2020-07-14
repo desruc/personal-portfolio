@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Box } from 'theme-ui';
 
-import icons from './techIconConstants';
+import icons from '../constants/techIcons';
 
 type TechIconProps = {
   icon: string;

@@ -3,9 +3,7 @@ import { jsx, Flex } from 'theme-ui';
 import { useStaticQuery, graphql } from 'gatsby';
 import GatsbyImage from 'gatsby-image';
 
-import ExternalLinkIcon from './icons/ExternalLinkIcon';
-import LinkedInIcon from './icons/LinkedInIcon';
-import GitHubIcon from './icons/GitHubIcon';
+import SvgIcon from './SvgIcon';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
 const AboutFooter = () => {
@@ -58,10 +56,10 @@ const AboutFooter = () => {
               variant: 'links.social'
             }}
           >
-            <LinkedInIcon height={16} width={16} />
+            <SvgIcon icon="linkedin" height={16} width={16} />
             <span sx={{ marginLeft: 2 }}>LinkedIn</span>
             <span sx={{ marginLeft: 2 }}>
-              <ExternalLinkIcon height={16} width={16} />
+              <SvgIcon icon="externallink" height={16} width={16} />
             </span>
           </a>
         </li>
@@ -74,10 +72,10 @@ const AboutFooter = () => {
               variant: 'links.social'
             }}
           >
-            <GitHubIcon height={16} width={16} />
+            <SvgIcon icon="github" height={16} width={16} />
             <span sx={{ marginLeft: 2 }}>GitHub</span>
             <span sx={{ marginLeft: 2 }}>
-              <ExternalLinkIcon height={16} width={16} />
+              <SvgIcon icon="externallink" height={16} width={16} />
             </span>
           </a>
         </li>

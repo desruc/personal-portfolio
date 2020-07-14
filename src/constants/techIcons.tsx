@@ -7,11 +7,7 @@ type TechIconMeta = {
   svg: React.ReactNode;
 };
 
-type IconsType = {
-  [key: string]: TechIconMeta;
-};
-
-const Icons: IconsType = {
+const techIcons: { [key: string]: TechIconMeta } = {
   gatsby: {
     color: '#663399',
     title: 'Gatsby.js',
@@ -314,4 +310,4 @@ const Icons: IconsType = {
   }
 };
 
-export default Icons;
+export default techIcons;

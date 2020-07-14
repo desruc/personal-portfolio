@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Box, Heading, Flex } from 'theme-ui';
 
-import TechIcon from './icons/TechIcon';
+import TechIcon from './TechIcon';
 
 const Skills = () => {
   const exceptional = [
