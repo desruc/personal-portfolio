@@ -22,18 +22,20 @@ const theme = {
     }
   },
   heading: {
-    skills: {
-      letterSpacing: 2,
+    section: {
+      letterSpacing: 3,
       fontWeight: 400,
       textTransform: 'uppercase',
-      mb: 2
+      mb: 3
     }
   },
   flex: {
     skills: {
       flexWrap: 'wrap',
       width: 'fit-content',
-      mb: 3
+      mb: 3,
+      justifyContent: 'center',
+      '@media (min-width: 992px)': { justifyContent: 'flex-start' }
       // '&:hover': { '.tech-icon': { opacity: 0.5 } }
     }
   },

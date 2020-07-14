@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: 'JMSCMRN',
-    siteTitleAlt: '',
-    siteDescription: 'My personal portfolio',
+    siteTitle: 'James Cameron',
+    siteTitleAlt: 'James Cameron',
+    siteDescription: 'James Cameron. Full-stack developer. Brisbane Australia',
     siteLanguage: 'en',
     author: 'James Cameron',
     contact: 'hello@jmscmrn.com',
     siteUrl: 'https://wwww.jmscmrn.com',
-    siteImage: '/siteImage.jpg',
+    siteImage: '/me.jpg',
     gitHub: 'https://github.com/desruc',
-    linkedIn: 'https://www.linkedin.com'
+    linkedIn: 'https://www.linkedin.com/in/james-donald-cameron/'
   },
   plugins: [
     {

@@ -22,17 +22,13 @@ const SEO = ({ title, description, pathname, image, children }: Props) => {
     author
   } = useSiteMetadata();
 
-  const computedTitle = title || siteTitleAlt;
+  const computedTitle = title || siteTitle;
   const computedDescription = description || siteDescription;
   const computedUrl = `${siteUrl}${pathname || ''}`;
   const computedImage = `${siteUrl}${image || siteImage}`;
 
   return (
-    <Helmet
-      title={title}
-      defaultTitle={siteTitleAlt}
-      titleTemplate={`%s | ${siteTitle}`}
-    >
+    <Helmet title={computedTitle} defaultTitle={siteTitleAlt}>
       <html lang={siteLanguage} />
       <meta name="description" content={computedDescription} />
       <meta name="image" content={computedImage} />

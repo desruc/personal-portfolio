@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, Text, Heading } from 'theme-ui';
 
-import Navigation from './Navigation';
 import AboutFooter from './AboutFooter';
 
 const AboutMe = () => (
@@ -33,7 +32,7 @@ const AboutMe = () => (
       }}
     >
       <div>
-        <Heading as="h1" sx={{ fontSize: 64 }}>
+        <Heading as="h1" sx={{ fontSize: 64, fontWeight: 500 }}>
           Hi, I'm James Cameron
         </Heading>
         <Text as="p" sx={{ marginTop: 32, fontSize: 14, lineHeight: 2 }}>
@@ -42,7 +41,6 @@ const AboutMe = () => (
           learn new things.
         </Text>
       </div>
-      <Navigation />
     </Box>
     <AboutFooter />
   </Box>

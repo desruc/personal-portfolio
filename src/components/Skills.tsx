@@ -31,7 +31,8 @@ const Skills = () => {
 
   return (
     <Box id="skills" sx={{ pt: 40, '@media (min-width: 992px)': { pt: 88 } }}>
-      <Heading as="h5" sx={{ variant: 'heading.skills' }}>
+      <Heading sx={{ variant: 'heading.section' }}>02. Skills</Heading>
+      <Heading as="h5" sx={{ variant: 'heading.section' }}>
         Exceptional
       </Heading>
       <Flex
@@ -44,7 +45,7 @@ const Skills = () => {
           <TechIcon key={icon} icon={icon} />
         ))}
       </Flex>
-      <Heading as="h5" sx={{ variant: 'heading.skills' }}>
+      <Heading as="h5" sx={{ variant: 'heading.section' }}>
         Great
       </Heading>
       <Flex sx={{ variant: 'flex.skills' }}>
@@ -52,7 +53,7 @@ const Skills = () => {
           <TechIcon key={icon} icon={icon} />
         ))}
       </Flex>
-      <Heading as="h5" sx={{ variant: 'heading.skills' }}>
+      <Heading as="h5" sx={{ variant: 'heading.section' }}>
         Good
       </Heading>
       <Flex sx={{ variant: 'flex.skills' }}>

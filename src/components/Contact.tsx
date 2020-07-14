@@ -10,12 +10,11 @@ const Contact = () => {
       id="contact"
       sx={{ pt: 40, pb: 56, '@media (min-width: 992px)': { pb: 0, pt: 88 } }}
     >
+      <Heading sx={{ variant: 'heading.section' }}>03. Contact</Heading>
       <Heading
+        as="h5"
         sx={{
-          mb: 3,
-          textTransform: 'uppercase',
-          letterSpacing: 3,
-          fontWeight: 400
+          variant: 'heading.section'
         }}
       >
         Get in touch

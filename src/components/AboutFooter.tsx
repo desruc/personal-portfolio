@@ -28,14 +28,21 @@ const AboutFooter = () => {
         mt: 4,
         '.gatsby-image-wrapper': {
           width: '50px !important',
-          height: '50px !important'
+          height: '50px !important',
+          minWidth: 50
         }
       }}
     >
       <GatsbyImage
         fixed={data.file.childImageSharp.fixed}
         alt="James Cameron"
-        sx={{ width: 50, height: 50, borderRadius: '50%', marginRight: 4 }}
+        sx={{
+          width: 50,
+          height: 50,
+          borderRadius: '50%',
+          marginRight: 10,
+          '@media (min-width: 992px)': { marginRight: 4 }
+        }}
       />
       <ul
         sx={{

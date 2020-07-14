@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box } from 'theme-ui';
+import { jsx, Box, Heading } from 'theme-ui';
 
 import ProjectCard from './ProjectCard';
 
@@ -13,6 +13,7 @@ const ProjectList = () => (
       '@media (min-width:1280px)': { pt: 88 }
     }}
   >
+    <Heading sx={{ variant: 'heading.section' }}>01. Projects</Heading>
     <Box sx={{ '&:hover': { '.project-card': { opacity: 0.5 } } }}>
       <ProjectCard
         link="https://github.com/desruc/discord-bot"
