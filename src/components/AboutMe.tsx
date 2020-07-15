@@ -37,8 +37,10 @@ const AboutMe = () => (
         </Heading>
         <Text as="p" sx={{ marginTop: 32, fontSize: 14, lineHeight: 2 }}>
           I'm a software developer based in Brisbane, Australia. I mostly do
-          front-end development and am a React fanactic. I am always looking to
-          learn new things.
+          front-end development but have been known to get my hands dirty with
+          all aspects of an application. I'm a self-proclaimed React fanactic
+          with a love for TypeScript! I am always looking to learn new things -
+          so if there's a problem that needs solving, I'm your guy!
         </Text>
       </div>
     </Box>

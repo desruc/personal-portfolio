@@ -35,7 +35,7 @@ const theme = {
       width: 'fit-content',
       mb: 3,
       justifyContent: 'center',
-      '@media (min-width: 992px)': { justifyContent: 'flex-start' }
+      '@media (min-width: 415px)': { justifyContent: 'flex-start' }
       // '&:hover': { '.tech-icon': { opacity: 0.5 } }
     }
   },
@@ -45,7 +45,12 @@ const theme = {
       color: 'inherit',
       fontSize: 14,
       display: 'flex',
-      alignItems: 'center'
+      alignItems: 'center',
+      transition: 'all 0.2s ease-in-out',
+      transitionProperty: 'color',
+      '&:hover': {
+        color: 'primary'
+      }
     },
     button: {
       borderRadius: 3,

@@ -5,9 +5,6 @@ import TechIcon from './TechIcon';
 
 const Skills = () => {
   const exceptional = [
-    'html',
-    'css',
-    'git',
     'javascript',
     'react',
     'redux',
@@ -15,22 +12,40 @@ const Skills = () => {
     'materialui',
     'styledcomponents',
     'gatsby',
-    'sass'
+    'nodejs',
+    'mongodb',
+    'html',
+    'css',
+    'sass',
+    'git'
   ];
 
   const great = [
     'typescript',
     'docker',
-    'nodejs',
-    'mongodb',
     'graphql',
-    'jest'
+    'jest',
+    'circleci',
+    'googlecloud',
+    'swagger'
   ];
 
-  const good = ['vuejs', 'php', 'jquery', 'mysql', 'laravel', 'wordpress'];
+  const good = [
+    'nextjs',
+    'vuejs',
+    'mocha',
+    'php',
+    'laravel',
+    'wordpress',
+    'jquery',
+    'mysql'
+  ];
 
   return (
-    <Box id="skills" sx={{ pt: 40, '@media (min-width: 992px)': { pt: 88 } }}>
+    <Box
+      id="skills"
+      sx={{ pt: 40, pb: 40, '@media (min-width: 992px)': { pt: 88, pb: 0 } }}
+    >
       <Heading sx={{ variant: 'heading.section' }}>02. Skills</Heading>
       <Heading as="h5" sx={{ variant: 'heading.section' }}>
         Exceptional

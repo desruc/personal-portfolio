@@ -27,6 +27,12 @@ const ProjectList = () => (
         description="A feature rich blogging theme. Includes tags/categories support, three colour schemes and code block formatting."
         stack={['typescript', 'gatsby.js']}
       />
+      <ProjectCard
+        link="https://github.com/desruc/personal-portfolio"
+        title="Personal Portfolio"
+        description="Where you are right now! A Gatsby.js site written in TypeScript."
+        stack={['typescript', 'gatsby.js']}
+      />
     </Box>
   </Box>
 );
