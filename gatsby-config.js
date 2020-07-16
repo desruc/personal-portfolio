@@ -6,7 +6,7 @@ module.exports = {
       "I'm a full-stack developer based in Brisbane, Australia. This site shows off some of the awesome things I've built!",
     siteLanguage: 'en',
     author: 'James Cameron',
-    contact: 'hello@jmscmrn.com',
+    contact: 'jdonaldcameron@gmail.com',
     siteUrl: 'https://wwww.jmscmrn.com',
     siteImage: '/title.png',
     gitHub: 'https://github.com/desruc',
