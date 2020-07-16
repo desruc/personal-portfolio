@@ -2,12 +2,13 @@ module.exports = {
   siteMetadata: {
     siteTitle: 'James Cameron',
     siteTitleAlt: 'James Cameron',
-    siteDescription: 'James Cameron. Full-stack developer. Brisbane Australia',
+    siteDescription:
+      "I'm a full-stack developer based in Brisbane, Australia. This site shows off some of the awesome things I've built!",
     siteLanguage: 'en',
     author: 'James Cameron',
-    contact: 'hello@jmscmrn.com',
+    contact: 'jdonaldcameron@gmail.com',
     siteUrl: 'https://wwww.jmscmrn.com',
-    siteImage: '/me.jpg',
+    siteImage: '/title.png',
     gitHub: 'https://github.com/desruc',
     linkedIn: 'https://www.linkedin.com/in/james-donald-cameron/'
   },
@@ -33,6 +34,8 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-typescript',
-    'gatsby-plugin-theme-ui'
+    'gatsby-plugin-theme-ui',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-react-helmet'
   ]
 };
