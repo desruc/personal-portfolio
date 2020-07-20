@@ -23,7 +23,7 @@ const ProjectList = () => (
       />
       <ProjectCard
         link="https://github.com/desruc/gatsby-theme-coding-blog"
-        title="Gatsby theme coding blog"
+        title="Coding Blog"
         description="A feature rich blogging theme. Includes tags/categories support, three colour schemes and code block formatting."
         stack={['typescript', 'gatsby.js']}
       />
