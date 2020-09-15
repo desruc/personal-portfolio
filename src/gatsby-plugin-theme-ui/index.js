@@ -40,6 +40,15 @@ const theme = {
     }
   },
   links: {
+    standard: {
+      textDecoration: 'none',
+      color: 'heading',
+      transition: 'all 0.2s ease-in-out',
+      transitionProperty: 'color',
+      '&:hover': {
+        color: 'primary'
+      }
+    },
     social: {
       textDecoration: 'none',
       color: 'inherit',
