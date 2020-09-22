@@ -18,7 +18,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: 'Rubik',
+            family: 'Ubuntu',
             variants: [300, 400, 500, 600, 700]
           }
         ]

@@ -7,9 +7,9 @@ const theme = {
     primary: '#eca400'
   },
   fonts: {
-    body: 'Rubik, -apple-sytem, Roboto, Helvetica Neue, sans-serif',
-    heading: 'Rubik, -apple-sytem, Roboto, Helvetica Neue, sans-serif',
-    monospace: 'Rubik, -apple-sytem, Roboto, Helvetica Neue, sans-serif'
+    body: 'Ubuntu, -apple-sytem, Roboto, Helvetica Neue, sans-serif',
+    heading: 'Ubuntu, -apple-sytem, Roboto, Helvetica Neue, sans-serif',
+    monospace: 'Ubuntu, -apple-sytem, Roboto, Helvetica Neue, sans-serif'
   },
   layout: {
     container: {
@@ -40,6 +40,15 @@ const theme = {
     }
   },
   links: {
+    standard: {
+      textDecoration: 'none',
+      color: 'heading',
+      transition: 'all 0.2s ease-in-out',
+      transitionProperty: 'color',
+      '&:hover': {
+        color: 'primary'
+      }
+    },
     social: {
       textDecoration: 'none',
       color: 'inherit',
