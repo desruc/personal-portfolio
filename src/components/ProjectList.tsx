@@ -48,7 +48,7 @@ const ProjectList = () => {
           gitHubLink="https://github.com/desruc/spotify-unwrapped"
           externalLink="https://unwrapped.jmscmrn.com"
           title="Spotify Unwrapped"
-          description="Everything you'd need in a discord bot. News, Moderation, Memes, an RPG and more!"
+          description="A React app for visualizing your Spotify data! View your top artists, tracks, albums, and detailed information about each track."
           stack={['react', 'styled-components']}
           image={data.unwrappedImage.childImageSharp.fluid}
         />
