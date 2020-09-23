@@ -36,9 +36,11 @@ const FeaturedProjectCard = ({
       gridTemplateColumns: 'repeat(12, 1fr)',
       alignItems: 'center',
       gap: 10,
-      mb: 40,
-      '@media (min-width: 1280px)': {
-        mb: 88
+      '&:not(:last-child)': {
+        mb: 40,
+        '@media (min-width: 1280px)': {
+          mb: 88
+        }
       },
       '&:nth-of-type(odd)': {
         '& .project-stack': {
