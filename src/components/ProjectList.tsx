@@ -15,6 +15,13 @@ const ProjectList = () => {
           }
         }
       }
+      keepcloneImage: file(relativePath: { eq: "keepclone.PNG" }) {
+        childImageSharp {
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       blogImage: file(relativePath: { eq: "blog.PNG" }) {
         childImageSharp {
           fluid(quality: 100) {
@@ -51,6 +58,14 @@ const ProjectList = () => {
           description="A React app for visualizing your Spotify data! View your top artists, tracks, albums, and detailed information about each track."
           stack={['react', 'styled-components']}
           image={data.unwrappedImage.childImageSharp.fluid}
+        />
+        <FeaturedProjectCard
+          gitHubLink="https://github.com/desruc/keepclone"
+          externalLink="https://keepclone.jmscmrn.com"
+          title="keepclone"
+          description="A Google Keep clone built with React, Material-UI and Firebase. Includes labels, drag-and-drop and dark mode!"
+          stack={['react', 'material-ui', 'firebase']}
+          image={data.keepcloneImage.childImageSharp.fluid}
         />
         <FeaturedProjectCard
           gitHubLink="https://github.com/desruc/gatsby-theme-coding-blog"
