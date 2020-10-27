@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: 'James Cameron',
+    siteTitle: 'James Cameron | Software Engineer',
     siteTitleAlt: 'James Cameron',
     siteDescription:
-      "I'm a full-stack developer based in Brisbane, Australia. This site shows off some of the awesome things I've built!",
+      'James Cameron is a software engineer based in Brisbane, Australia; who specializes in building exceptional websites, applications, and everything in between.',
     siteLanguage: 'en',
     author: 'James Cameron',
     contact: 'jdonaldcameron@gmail.com',
-    siteUrl: 'https://wwww.jmscmrn.com',
-    siteImage: '/title.png',
+    siteUrl: 'https://jmscmrn.com',
+    siteImage: '/jmscmrn.jpg',
     gitHub: 'https://github.com/desruc',
     linkedIn: 'https://www.linkedin.com/in/james-donald-cameron/'
   },
