@@ -5,12 +5,10 @@
   The first iteration of <a href="https://www.jmscmrn.com" target="_blank">jmscmrn.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <p align="center">
-  <a href="https://circleci.com/gh/desruc/personal-portfolio">
-    <img src="https://circleci.com/gh/desruc/personal-portfolio.svg?style=svg">
-  </a>
+  <img src="https://user-images.githubusercontent.com/36631337/97286845-9b4f7d80-188f-11eb-99b0-4363c627fe2d.png" alt="jmscmrn" />
 </p>
 
-## Development
+## 🤘 Getting started
 
 1. Install the Gatsby CLI
 
