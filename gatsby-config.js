@@ -36,6 +36,14 @@ module.exports = {
     'gatsby-plugin-typescript',
     'gatsby-plugin-theme-ui',
     'gatsby-plugin-sitemap',
-    'gatsby-plugin-react-helmet'
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: process.env.GOOGLE_TAG_MANAGER_ID,
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: 'gatsby' }
+      }
+    }
   ]
 };
