@@ -2,6 +2,7 @@
 import { jsx, Box, Text, Heading } from 'theme-ui';
 
 import AboutFooter from './AboutFooter';
+import Navigation from './Navigation';
 
 const AboutMe = () => (
   <Box
@@ -36,12 +37,15 @@ const AboutMe = () => (
           Hi, I'm James Cameron
         </Heading>
         <Text as="p" sx={{ marginTop: 32, fontSize: 14, lineHeight: 2 }}>
-          I'm a software developer based in Brisbane, Australia. I mostly do
-          front-end development but have been known to get my hands dirty with
-          all aspects of an application. I'm a self-proclaimed React fanactic,
-          with a love for TypeScript!
+          I'm a software developer based in Brisbane, Australia; and love
+          building things for the web. I specialize in front-end development but
+          usually end up involved in all aspects of an application - I just
+          can't help myself! I have an unsatisfiable curiosity when it comes to
+          programming and I'm always tinkering with something new in my spare
+          time.
         </Text>
       </div>
+      <Navigation />
     </Box>
     <AboutFooter />
   </Box>
