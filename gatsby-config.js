@@ -14,17 +14,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-prefetch-google-fonts',
-      options: {
-        fonts: [
-          {
-            family: 'Ubuntu',
-            variants: [300, 400, 500, 600, 700]
-          }
-        ]
-      }
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
