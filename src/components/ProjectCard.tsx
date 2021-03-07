@@ -58,4 +58,8 @@ const ProjectCard = ({ link, title, description, stack }: ProjectCardProps) => (
   </Box>
 );
 
+ProjectCard.defaultProps = {
+  stack: []
+};
+
 export default ProjectCard;

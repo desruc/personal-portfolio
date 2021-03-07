@@ -30,4 +30,9 @@ const SvgIcon = ({ icon, height = 24, width = 24 }: SvgIconProps) => {
   );
 };
 
+SvgIcon.defaultProps = {
+  height: 24,
+  width: 24
+};
+
 export default SvgIcon;
