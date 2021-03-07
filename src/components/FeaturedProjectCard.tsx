@@ -256,4 +256,9 @@ const FeaturedProjectCard = ({
   </Box>
 );
 
+FeaturedProjectCard.defaultProps = {
+  externalLink: '',
+  stack: []
+};
+
 export default FeaturedProjectCard;

@@ -67,4 +67,12 @@ const SEO = ({ title, description, pathname, image, children }: Props) => {
   );
 };
 
+SEO.defaultProps = {
+  title: '',
+  description: '',
+  pathname: '',
+  image: '',
+  children: null
+};
+
 export default SEO;

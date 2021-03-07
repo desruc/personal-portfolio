@@ -21,6 +21,7 @@ const Skills = () => {
   ];
 
   const great = [
+    'nextjs',
     'typescript',
     'docker',
     'graphql',
@@ -31,7 +32,6 @@ const Skills = () => {
   ];
 
   const good = [
-    'nextjs',
     'vuejs',
     'mocha',
     'php',

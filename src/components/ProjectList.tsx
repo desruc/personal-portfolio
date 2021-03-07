@@ -4,6 +4,7 @@ import { jsx, Box, Heading } from 'theme-ui';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import FeaturedProjectCard from './FeaturedProjectCard';
+import MoreProjects from './MoreProjects';
 
 const ProjectList = () => {
   const data = useStaticQuery(graphql`
@@ -67,22 +68,8 @@ const ProjectList = () => {
           stack={['react', 'material-ui', 'firebase']}
           image={data.keepcloneImage.childImageSharp.fluid}
         />
-        <FeaturedProjectCard
-          gitHubLink="https://github.com/desruc/gatsby-theme-coding-blog"
-          externalLink="https://blog.jmscmrn.com"
-          title="Coding Blog"
-          description="A feature rich blogging theme. Includes tags/categories support, three colour schemes and code block formatting."
-          stack={['typescript', 'gatsby.js']}
-          image={data.blogImage.childImageSharp.fluid}
-        />
-        <FeaturedProjectCard
-          gitHubLink="https://github.com/desruc/discord-bot"
-          title="Discord Bot"
-          description="Everything you'd need in a discord bot. News, Moderation, Memes, an RPG and more!"
-          stack={['typescript', 'mongodb']}
-          image={data.discordImage.childImageSharp.fluid}
-        />
       </Box>
+      <MoreProjects />
     </Box>
   );
 };
